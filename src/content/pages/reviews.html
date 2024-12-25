@@ -1,0 +1,127 @@
+---
+title: 'Recenzije'
+description: 'Simel - recenzije'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Recenzije
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Recenzije</h1>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/cura1.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Ekipa je super. Držali su se dogovora, bili su učinkoviti i brzi, preporučam svima.
+                </p>
+                <div class="star-group">
+                    <span class="name">Jaka Pogačnik</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/lik1.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Izvrsno odrađen posao od razumijevanja zahtjeva naručitelja do završnih detalja. Brz, točan i kvalitetan izvođač.
+                </p>
+                <div class="star-group">
+                    <span class="name">Vincent Maras</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/lik2.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Jednostavni, odgovorni, precizni, uredni i točni. Sve što je dogovoreno - izvršeno prije dogovorenog roka. Topla preporuka svim budućim investitorima u izgradnji svog doma!
+                </p>
+                <div class="star-group">
+                    <span class="name">Aleks Lađanski</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/cura3.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Izuzetno smo zadovoljni adaptacijom naše obiteljske kuće. Točni, profesionalni sa odličnom komunikacijom. Svakako preporucujemo!
+                </p>
+                <div class="star-group">
+                    <span class="name">Adriana Marić</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/lik4.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Vrhunsko građevinsko poduzeće sa stručnim ljudima. Vrlo poštena i korektna suradnja. Za sve preporuke. 
+                </p>
+                <div class="star-group">
+                    <span class="name">Leo Nikšić</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/novo/cura4.avif" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Iznimno profesionalni i točni. Za svaku pohvalu! Da se može dobili bi 10 do 10!
+                </p>
+                <div class="star-group">
+                    <span class="name">Ivana Zubčić</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

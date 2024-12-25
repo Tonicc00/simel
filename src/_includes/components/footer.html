@@ -1,0 +1,77 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/">
+                <!-- <img loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="264" height="78"> -->
+                <p class="cs-text">SIMEL d.o.o</p>
+            </a>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>INFORMACIJE</h2>
+                    </li>
+                    <li>
+                        <a href="/">Naslovna</a>
+                    </li>
+                    <li>
+                        <a href="/about">O nama</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Galerija</a>
+                    </li>
+                    <li>
+                        <a href="/testimonials">Recenzije</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Kontakt</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Usluge</h2>
+                    </li>
+                    <li>Keramičarstvo</li>
+                    <li>Vodovod i grijanje</li>
+                    <li>Knauf</li>
+                    <li>Adaptacije</li>
+                    <li>Novogradnja</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Kontakt</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            {{client.address.lineOne}}<br>
+                            {{client.address.city}}
+                            {{client.address.zip}}
+                            {{client.address.state}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:{{client.phoneForTel}}">
+                            Tel:
+                            {{client.phoneFormatted}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{client.email}}">Email: andrej.knego@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="/" target="_blank" rel="noopener">Toni Jokić</a>
+        <span class="copyright">
+            Copyright 2025 - Present</span>
+    </div> -->
+</footer>

@@ -1,0 +1,14 @@
+{
+	"name": "Simel trgovina in storitve",
+	"email": "andrej.knego@gmail.com",
+	"phoneForTel": "+386 40 776 956",
+	"phoneFormatted": "+386 40 776 956",
+	"address": {
+		"lineOne": "Tovarniška c.11",
+		"city": "Prebold",
+		"state": "Slovenija",
+		"zip": "3312,",
+		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+	},
+	"domain": "www.zavrsni-radovi.com"
+}

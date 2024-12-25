@@ -1,0 +1,378 @@
+---
+title: 'Simel d.o.o.'
+description: 'Završni radovi SLovenija'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Naslovna
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <!-- <span class="cs-topper">završni radovi</span> -->
+                <h1 class="cs-title">SIMEL TRGOVINA IN STORITVE</h1>
+                <p class="cs-text">
+                    Nudimo usluge završnih radova u građevini na području 
+                    Slovenije za estetski privlačne i 
+                    funkcionalane prostore.
+                </p>
+                <!-- <a href="/about" class="cs-button-solid">Explore More</a>
+                <a href="/contact" class="cs-button-transparent">
+                    <img
+                    class="cs-img"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                    alt="play icon"
+                    width="17"
+                    height="17" />
+                    Get in Touch
+                </a> -->
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services" class="services">
+        <!-- Get Icons From flaticon.com -->
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/tiles.svg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <h2>Keramika</h2>
+            <p>Specijalizirani smo za izvođenje svih vrsta keramičarskih radova. Postavljamo podne i zidne pločice u svim unutarnjim i vanjskim prostorima.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/faucet.svg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <h2>Vodovod i grijanje</h2>
+            <p>Vršimo usluge instalaliranja vodovoda i centralnog grijanja.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/wall.svg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <h2>Knauf</h2>
+            <p>Pružamo usluge postavljanja knauf sistema. Kako bi zidovi imali dugi vijek trajanja, potrebna su znanja, vještine i odgovarajući alat.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/house.svg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <h2>Novogradnja i adaptacije</h2>
+            <p>Građevinski radovi koje nudimo obuhvaćaju radove na novim
+                (novogradnja) tako i na postojećim objektima
+                 - rekonstrukcije, popravci, održavanje i adaptacije.</p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/soboslikar.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/soboslikar.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/soboslikar.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/keramika.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/keramika.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/kermaika.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">O nama</span>
+                <h2 class="cs-title">SIMEL TRGOVINA IN STORITVE</h2>
+                <p class="cs-text">
+                    U svom poslovanju, Simel d.o.o. nudi cjelokupnu uslugu 
+                    koordiniranja i upravljanja širokim asortimanom izvođenja raznih 
+                    usluga i građevinskih radova.
+                </p>
+                <p class="cs-text">
+                    Uz odabir pravog izvođača, uređenje interijera i eksterijera predstavlja zadovoljstvo. Na vama je da kreirate prostore prema svojim željama, a na nama je da radove izvedemo pouzdano, brzo i kvalitetno.
+                </p>
+
+                <!-- IDE U O NAMA -->
+                <!-- <p class="cs-text">
+                    Specijalizirani smo za izvođenju završnih radova u graditeljstvu. Korištenjem naših usluga osiguravate izvedbu radova prepuštenu u ruke stručnog tima.
+                </p> -->
+
+
+                <!-- <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img 
+                    class="cs-quote-icon"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+                    alt="gavel"
+                    width="136"
+                    height="77" />
+                </div> -->
+                <a href="/about" class="cs-button-solid">Više o nama</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Extra Content To Rank             -->
+    <!-- ============================================ -->
+
+    <section id="sbs-r">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/radijator.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/radijator.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/radijator.jpg" alt="house" loading="lazy" width="400" height="560">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <!-- <span class="cs-topper">SEO Ranking</span> -->
+                <h2 class="cs-title">Kvaliteta i pouzdanost</h2>
+                <p class="cs-text">
+                    Simel pruža kvalitetnu i pouzdanu uslugu završnih građevinskih radova na području Slovenije,
+                     koncipiran da zadovolji sve potrebe jednog klijenta po 
+                     pitanju stambenih prostora.
+                </p>
+                <p class="cs-text">
+                    Naš stručni tim ima višegodišnje iskustvo u izvođenju svih vrsta građevinskih projekata, od novogradnje do kompletnih adaptacija postojećih objekata.
+                </p>
+                <!-- <a href="/blog" class="cs-button-solid">Read our Blog</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <!-- <span class="cs-topper"></span> -->
+            <h2 class="cs-title">Primjeri naših usluga</h2>
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/novo/knauf3.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/novo/knauf3.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/novo/knauf3.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
+                    </picture>
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/novo/knauf4.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/novo/knauf4.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/novo/knauf4.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/novo/vodovod.avif">
+                        <source media="(min-width: 601px)" srcset="/assets/images/novo/vodovod.avif">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/novo/vodovod.avif" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+
+                </div>
+            </div>
+            <a href="/projects" class="cs-button-solid">Galerija</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="cs-container">
+            <span class="cs-topper">Komentari naših klijenata</span>
+            <h2 class="cs-title">Recenzije</h2>
+            <p class="cs-text">
+                Neki od naših klijenata su sa zadovoljstvom podjelili svoje iskustvo u radu sa Simel d.o.o.
+            </p>
+            <ul class="cs-card-group">
+                <!-- Review 1 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Od dogovora do realizacije posao odrađen za svaku pohvalu, profesionalno, kvalitetno i u dogovorenim rokovima.
+                    </p>
+                    <span class="cs-reviewer">
+                        Jan Zajc
+                        <!-- <span class="cs-desc">Homeowner</span> -->
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+                <!-- Review 2 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Jako sam zadovoljna sa izvedenim radovima. Brzo i kvalitetno odrađeno. Preporuke!
+                    </p>
+                    <span class="cs-reviewer">
+                        Ana Rako
+                        <!-- <span class="cs-desc">Homeowner</span> -->
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+            </ul>
+            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Više recenzija</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}
