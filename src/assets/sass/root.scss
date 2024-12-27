@@ -870,6 +870,7 @@
 
             img {
                 width: 100%;
+                max-width: 50px;
                 height: 100%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
