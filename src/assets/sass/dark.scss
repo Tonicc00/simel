@@ -14,7 +14,7 @@
     }
 
     body.dark-mode {
-        background-color: var(--dark);
+        background-color: #ffffff;
 
         p,
         li,
@@ -24,18 +24,18 @@
         h4,
         h5,
         h6 {
-            color: #fff;
+            color: #000000;
         }
 
         // hide all light classes
-        // .light {
-        //     display: none;
-        // }
+        .light {
+            display: block !important;
+        }
 
         // // show all dark classes
-        // .dark {
-        //     display: block !important;
-        // }
+        .dark {
+            display: none;
+        }
     }
 
     .dark {
