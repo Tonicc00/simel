@@ -14,7 +14,7 @@
     }
 
     body.dark-mode {
-        background-color: #ffffff;
+        background-color: #fff;
 
         p,
         li,
@@ -24,9 +24,11 @@
         h4,
         h5,
         h6 {
-            color: #000000;
+            color: #000;
         }
-
+        img{
+            border: none !important;
+        }
         // hide all light classes
         .light {
             display: block !important;
