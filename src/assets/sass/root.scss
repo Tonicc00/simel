@@ -496,6 +496,9 @@
             align-items: flex-end;
             gap: calc(20 / 16 * 1rem);
             overflow: scroll;
+            overflow-y: hidden;
+            overflow-x: hidden;
+
         }
 
         .cs-li {
